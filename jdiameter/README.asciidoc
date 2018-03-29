@@ -1,0 +1,13 @@
+= JDiameter @ Docker 
+
+For JDiameter, we have deployed a charging server simulator on top of the JDiameter stack, which, by default is expecting
+Credit Control Requests, Diameter application id 4. 
+
+
+== Instructions
+
+1. Clone JDiameter repo (e.g. `git clone https://github.com/RestComm/jdiameter` )
+2. Switch to `examples/charging-server-simulator/`
+3. Run `mvn install` (requires you to have `java 6`, `maven`and `docker` installed on your machine). This will build a docker 
+image, which will then be available on your host as `charging-server-simulator`. 
+4. Run `docker run -p 3868:3868 charging-server-simulator`
