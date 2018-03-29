@@ -1,0 +1,11 @@
+version: '3'
+services:
+  restcomm_jdiameter:
+    image: restcomm/charging-server-simulator
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: never
+    ports:
+     - "3868:3868"
+
