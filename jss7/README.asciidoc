@@ -1,12 +1,12 @@
-# Intro
+= Intro
 
-This docker image contains the [Restcomm JSS7](https://github.com/RestComm/jss7) stack deployed on 
-[Restcomm JAIN SLEE](https://github.com/RestComm/jain-slee), together with its Resource Adaptors, as a JBoss service, 
-as described in the [docs](https://www.restcomm.com/docs/core/ss7/SS7_Stack_Installation_Guide.html#installation-options). 
+This docker image contains the https://github.com/RestComm/jss7[Restcomm JSS7] stack deployed on 
+https://github.com/RestComm/jain-slee[Restcomm JAIN SLEE], together with its Resource Adaptors, as a JBoss service, 
+as described in the https://www.restcomm.com/docs/core/ss7/SS7_Stack_Installation_Guide.html#installation-options[docs]. 
 
 It also includes a test JSS7 Service which is deployed with the stack, to simulate some of the functionality.
 
-## Instructions 
+== Instructions 
 
 1. Clone this repo and switch to the `jss7` folder, or download both files into the same folder. 
 2. Run `docker-compose up`. This should first start the docker image build process and then run the container itself, 
